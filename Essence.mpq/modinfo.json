@@ -7,15 +7,15 @@
 Mod Download: https://github.com/Karakruxx/EssencePublic/archive/refs/heads/main.zip
 Mod Config Download: https://drive.google.com/uc?export=download&id=1VNa2MOoCpEQcECPn3pBQVYDzYngvA30r
 Mod Version: 1.25
-News 1 Title: "Essence Beta Update Released! (1.25)"
-News 1 Message: "This is a mod for you!"
-News 2 Title: "Thanks for your Support!"
-News 2 Message: "I would like to take the time to officially say thank you for everyone's continued patience and support during this 'slow time' as I bounce back from my health issues. I feel guilty enough as-is, so I appreciate that it's not coming from you guys also, heh. You guys are rockstars as always, and I hope to continue normal development pacing soon!"
+News 1 Title: "Latest Patch Notes (1.26)" 
+News 1 Message: "Disabled the property display of 'Level X Charm Aura When Equipped' on charms. Side-effect; also hides any existing properties on items that had auras when equipped. The aura still functions as it did before; the display on item is just disabled. New items found or made will properly display their aura property. Changed Fade skill on the Treachery runeword from cast when struck to charges"
+News 2 Title: "Thanks for playing!"
+News 2 Message: "Are you staying hydrated?"
 
 --General Options--
 Map Layouts: Enabled
 UI Themes: Enabled
-Customizations: Disabled
+Customizations: Enabled
 Vault Access: Enabled
 
 --Additional Options--
@@ -25,8 +25,8 @@ HUD Display: Enabled
 Monster Stats Display: Enabled
 
 --Author Links--
-Discord: https://www.discord.gg/pqUWcDcjWF
-Wiki: 
+Discord: https://discord.gg/aQs8vVTa
+Wiki: https://en.wikipedia.org/wiki/Main_Page
 Patreon: https://www.patreon.com/bonesyd2r
 */
 

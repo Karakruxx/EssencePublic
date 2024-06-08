@@ -4,7 +4,7 @@
         "priority": 9001,
         "fitToParent": true,
         "defaultWidget": "ReturnToGame",
-        "onlineLogoWidgetPosition": { "y": 140 },
+        "onlineLogoWidgetPosition": { "y": 140 }
     },
     "children": [
         {
@@ -19,13 +19,13 @@
                     "fields": {
                         "fitToParent": true
                     }
-                },  
+                }  
             ]
         },
         {
             "type": "Widget", "name": "LogoWidget",
             "fields": {
-                "anchor": { "x": 0.5 },
+                "anchor": { "x": 0.5 }
             },
             "children": [
                 {
@@ -33,7 +33,7 @@
                     "fields": {
                         "rect": { "x": -303, "y": 171 },
                         "filename": "LogoAnimation/FullGlow_PC",
-                        "fps": 20,
+                        "fps": 20
                     }
                 },
                 {
@@ -41,14 +41,14 @@
                    "fields": {
                         "rect": { "x": -292, "y": 141 },
                         "filename": "LogoAnimation/LogoAnimation",
-                        "fps": 20,
+                        "fps": 20
                    }
                 },
                 {
                    "type": "ImageWidget", "name": "ResurrectedText",
                    "fields": {
-                        "rect": { "x": -239, "y": 473 },
-                        "filename": "LogoAnimation/ResurrectedText",
+                        "rect": { "x": -159, "y": 473 },
+                        "filename": "LogoAnimation/ResurrectedText"
                    }
                 },
                 {
@@ -56,9 +56,9 @@
                    "fields": {
                         "rect": { "x": -129, "y": 511 },
                         "filename": "LogoAnimation/Logo_BottomFlame",
-                        "fps": 20,
+                        "fps": 20
                    }
-                },
+                }
             ]
         },
         {
@@ -81,29 +81,9 @@
                 "rect": { "x": -329, "y": -340 },
                 "columns": [ { "width": 658, "alignment": { "h": "center", "v": "center" } } ],
                 "rowHeight": 140,
-                "generateFocusLinks": true,
+                "generateFocusLinks": true
             },
             "children": [
-				{
-                    "type": "TableRowWidget", "name": "Row Runewords",
-                    "children": [
-                        {
-                            "type": "ButtonWidget", "name": "Runewords",
-                            "fields": {
-                                "filename": "PauseMenu\\PauseButton",
-                                "hoveredFrame": 3,
-                                "textString": "@Runewords",
-                                "pressLabelOffset": [ 0, 0 ],
-                                "onClickMessage": "PanelManager:OpenPanel:runewords",
-                                "textColor": "$FontColorGoldYellow",
-                                "text/style": "$StyleFEButtonText",
-                                "acceptsReturnKey": true,
-                                "focusOnMouseOver": true,
-                                "sound": "select",
-                            }
-                        }
-                    ]
-                },
                 {
                     "type": "TableRowWidget", "name": "Row Options",
                     "children": [
@@ -118,7 +98,26 @@
                                 "text/style": "$StyleFEButtonText",
                                 "acceptsReturnKey": true,
                                 "focusOnMouseOver": true,
-                                "sound": "select",
+                                "sound": "select"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "TableRowWidget", "name": "Row Options",
+                    "children": [
+                        {
+                            "type": "ButtonWidget", "name": "Settings",
+                            "fields": {
+                                "filename": "PauseMenu\\PauseButton",
+                                "hoveredFrame": 3,
+                                "textString": "Mod Info",
+                                "onClickMessage": "PanelManager:OpenPanel:RemoddedInfoPanel",
+                                "textColor": "$FontColorBonesyRed",
+                                "text/style": "$StyleFEButtonText",
+                                "acceptsReturnKey": true,
+                                "focusOnMouseOver": true,
+                                "sound": "select"
                             }
                         }
                     ]
@@ -138,7 +137,7 @@
                                 "text/style": "$StyleFEButtonText",
                                 "acceptsReturnKey": true,
                                 "focusOnMouseOver": true,
-                                "sound": "cursor_select",
+                                "sound": "cursor_select"
                             }
                         }
                     ]
@@ -158,7 +157,7 @@
                                 "text/style": "$StyleFEButtonText",
                                 "acceptsReturnKey": true,
                                 "focusOnMouseOver": true,
-                                "sound": "select",
+                                "sound": "select"
                             }
                         }
                     ]
@@ -169,15 +168,15 @@
             "type": "ImageWidget", "name": "AgeDescriptorImage",
             "fields": {
                 "rect": { "x": 40, "y": 80 },
-                "filename": "PauseMenu\\descriptor-18",
+                "filename": "PauseMenu\\descriptor-18"
             }
         },
         {
             "type": "ImageWidget", "name": "ViolenceDescriptorImage",
             "fields": {
                 "rect": { "x": 280, "y": 80 },
-                "filename": "PauseMenu\\descriptor-violence",
+                "filename": "PauseMenu\\descriptor-violence"
             }
-        },
+        }
     ]
 }
