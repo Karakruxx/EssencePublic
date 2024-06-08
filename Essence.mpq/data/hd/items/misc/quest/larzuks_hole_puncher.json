@@ -1,0 +1,98 @@
+{
+    "dependencies": {
+        "animations": [],
+        "json": [{
+                "path": "data/hd/items/dropped_items/dropped_items_nw.json"
+            }
+        ],
+        "models": [{
+                "path": "data/hd/items/weapon/hammer/horadric_malus/horadric_malus.model"
+            }
+        ],
+        "objecteffects": [],
+        "other": [],
+        "particles": [],
+        "physics": [],
+        "skeletons": [{
+                "path": "data/hd/items/weapon/hammer/horadric_malus/skeleton/horadric_malus.skeleton"
+            }
+        ],
+        "textures": [{
+                "path": "data/hd/items/weapon/hammer/horadric_malus/weapon_horadric_malus_ALB.texture"
+            }, {
+                "path": "data/hd/items/weapon/hammer/horadric_malus/weapon_horadric_malus_mask.texture"
+            }, {
+                "path": "data/hd/items/weapon/hammer/horadric_malus/weapon_horadric_malus_NRM.texture"
+            }, {
+                "path": "data/hd/items/weapon/hammer/horadric_malus/weapon_horadric_malus_ORM.texture"
+            }
+        ],
+        "variantdata": []
+    },
+    "entities": [{
+            "components": [{
+                    "animations": [],
+                    "doNotInheritRotation": false,
+                    "doNotUseHDHeight": false,
+                    "hideAllMeshWhenInOpenedMode": false,
+                    "name": "component_root",
+                    "onCreateEventName": "",
+                    "rotationOverride": {
+                        "w": 0.9238795,
+                        "x": 0.0,
+                        "y": 0.3826834,
+                        "z": 0.0
+                    },
+                    "state_machine_filename": "data/hd/items/dropped_items/dropped_items_nw.json",
+                    "type": "UnitRootComponent"
+                }, {
+                    "filename": "data/hd/items/weapon/hammer/horadric_malus/skeleton/horadric_malus.skeleton",
+                    "name": "component_skeleton",
+                    "type": "SkeletonDefinitionComponent"
+                }, {
+                    "inheritOnlyPosition": false,
+                    "name": "entity_root_TransformDefinition",
+                    "orientation": {
+                        "w": 0.987688363,
+                        "x": 0.0,
+                        "y": -0.156434461,
+                        "z": 0.0
+                    },
+                    "position": {
+                        "x": 0.2,
+                        "y": 0.0,
+                        "z": 0.05
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "type": "TransformDefinitionComponent"
+                }
+            ],
+            "id": 4210704832,
+            "name": "entity_root",
+            "type": "Entity"
+        }, {
+            "components": [{
+                    "filename": "data/hd/items/weapon/hammer/horadric_malus/horadric_malus.model",
+                    "floorModel": false,
+                    "ghostShadows": false,
+                    "lightMask": 19,
+                    "name": "component_model_horadric_malus",
+                    "shadowMask": 3,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1,
+                    "type": "ModelDefinitionComponent",
+                    "visibleLayers": 1
+                }
+            ],
+            "id": 2291792273,
+            "name": "entity_model",
+            "type": "Entity"
+        }
+    ],
+    "name": "horadric_malus",
+    "type": "UnitDefinition"
+}

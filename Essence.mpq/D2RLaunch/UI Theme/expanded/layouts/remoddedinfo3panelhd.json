@@ -1,0 +1,876 @@
+{
+    "type": "SoundOptionsPanel",
+    "name": "RemoddedInfo3Panel",
+    "fields": {
+        "priority": 9003,
+        "rect": "$OptionsPanelRect",
+        "anchor": {
+            "x": 0.5
+        },
+        "applySettingsImmediately": true
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": { "x": 1.0 },
+                "filename": "PauseMenu\\VerticalScroll"
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": { "x": 1.0 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ScrollViewWidget",
+            "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController"
+            },
+            "children": [
+                {
+                    "type": "TableWidget",
+                    "name": "OptionsTable",
+                    "fields": {
+                        "columns": [
+                            "$RMDOptionsTableColumn1",
+                            "$RMDOptionsTableColumn2"
+                        ],
+                        "rowHeight": "$RMDOptionsTableRowHeight"
+                    },
+                    "children": [
+                        {
+                            "type": "TableRowWidget", "name": "Itemization",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ItemizationT",
+                                    "fields": {
+                                        "text": "Itemization",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$RMDOptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "IZ1",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "IZ1T",
+                                    "fields": {
+                                        "text": " - Many New Stats such as: Stat % bonus, Summon Bonuses, Extra Missiles and Attacks",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "IZ2",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "IZ2T",
+                                    "fields": {
+                                        "text": " - Decreased rune rollback rate",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "IZ3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "IZ3T",
+                                    "fields": {
+                                        "text": " - All Assassin Claws now have the chance for staff mods",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Crossbows and Bows are now the same weapon type",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", 
+                                    "fields": {
+                                        "text": " - Arrows and Bolts have been amalgimated into Quivers",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "IZ4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "IZ4T",
+                                    "fields": {
+                                        "text": " - Quivers and Throwing Weapons now always replenish quality",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "IZ5",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "IZ5T",
+                                    "fields": {
+                                        "text": " - Quivers can now be any quality and base ones cost 1 Gold",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                                                {
+                            "type": "TableRowWidget", "name": "IZ7",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "IZ7T",
+                                    "fields": {
+                                        "text": " - Rune level requirements for low and mid runes have been lowered",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                                                {
+                            "type": "TableRowWidget", "name": "IZ9",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "IZ9T",
+                                    "fields": {
+                                        "text": " - Arrows and Bolts now only cost 1 gold",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "IZ10",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "IZ10T",
+                                    "fields": {
+                                        "text": " - The following equipment can now be socketed:",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                },
+                                {
+                                    "type": "DropdownListWidget", "name": "Resolution",
+                                    "fields": {
+                                        "rect": "$OptionsDropDownRect",
+                                        "background/rect": "$OptionsDropDownBackgroundRect",
+                                        "background/leftCapOffset": "$OptionsDropDownLeftCapOffset",
+                                        "background/rightCapOffset": "$OptionsDropDownRightCapOffset",
+                                        "pressedFrame": 1,
+                                        "disabledFrame": 2,
+                                        "hoveredFrame": 3,
+                                        "focusIndicatorFilename": "$OptionsDropDownFocusIndicatorFilename",
+                                        "states": [ "Belts (2 Sockets)", "Boots (3 Sockets)", "Gloves (3 Sockets)", "Throwing Weap (4 Sockets)" ],
+                                        //"onUpdateMessage": "OptionsPanelMessage:SetScreenResolution",
+                                        "text/style": "$StyleSettingsCarousel",
+                                        "text/style": { "pointSize": "$MediumFontSize" },
+                                        "textColor": "$FontColorLightGold",
+                                        "tooltipString": "More items can now be socketed",
+                                        "tooltipStyle": {
+                                            "showAfterDelay": true
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "IZ11",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "IZ11T",
+                                    "fields": {
+                                        "text": " - Gloves will get weapon bonuses, boots and belts will get armor bonuses",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", 
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", 
+                                    "fields": {
+                                        "text": " - Amulets and Rings can have 1 socket and get shield bonuses",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "IZ12",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "IZ12T",
+                                    "fields": {
+                                        "text": " - Increased Max Sockets for many items, and at lower levels",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Added Experience% Stat added to many low level uniques for faster leveling",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Bows and Crossbows are now the same type",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Spears have been amalagimated with polearms",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Crystal Swords (and its Exc and Elite Versions) are now Sorc only Spell Blades",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Bone Helm and Bone Shield (and their Exc and Elite Versions) are now Necro Only ",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Amazon Spears will no longer drop",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Druid has three new armor types Bear, Wolf and Wood Chest Armors",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Club and its Exc and Elite Versions have been renamed and are now Druid Branches",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Assassin Cloaks are now available",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Two-Handed Swords are now Assassin Katans and have been renamed",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Throwing Knifes are now Assassin Only",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Military Picks have been repurposed as Necro Sickles",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Paladin now has Blessed Plate Armor",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Assassin now has class specific Boots",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Scythes and War Scythes are are now Necro Scythes and Threshers ",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Wands are now Necromancer only and can have +Oskill of vanilla curses",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Kriss and Blade are now Necro Cerimonial Daggers ",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - New Paladin only crowns that have Extra Blessed Skill Damage",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Barbarians have new mighty belts that add + %Strength and/or Vitality but lose 1 potion row",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Maul and Great Maul are now Barbarian Mighty Hammers",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Great and Glorious Axes are now Barbaian Mighty Axes",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Sorceress now has new Caster Gauntlets",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - Amazon now has Skovos Circlets that have + % Attack Rating and Inner Sight Bonuses",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+
+/*
+RRRRRRRRRRRRRRRRR                                                         
+R::::::::::::::::R                                                        
+R::::::RRRRRR:::::R                                                       
+RR:::::R     R:::::R                                                      
+  R::::R     R:::::Ruuuuuu    uuuuuunnnn  nnnnnnnn        eeeeeeeeeeee    
+  R::::R     R:::::Ru::::u    u::::un:::nn::::::::nn    ee::::::::::::ee  
+  R::::RRRRRR:::::R u::::u    u::::un::::::::::::::nn  e::::::eeeee:::::ee
+  R:::::::::::::RR  u::::u    u::::unn:::::::::::::::ne::::::e     e:::::e
+  R::::RRRRRR:::::R u::::u    u::::u  n:::::nnnn:::::ne:::::::eeeee::::::e
+  R::::R     R:::::Ru::::u    u::::u  n::::n    n::::ne:::::::::::::::::e 
+  R::::R     R:::::Ru::::u    u::::u  n::::n    n::::ne::::::eeeeeeeeeee  
+  R::::R     R:::::Ru:::::uuuu:::::u  n::::n    n::::ne:::::::e           
+RR:::::R     R:::::Ru:::::::::::::::uun::::n    n::::ne::::::::e          
+R::::::R     R:::::R u:::::::::::::::un::::n    n::::n e::::::::eeeeeeee  
+R::::::R     R:::::R  uu::::::::uu:::un::::n    n::::n  ee:::::::::::::e  
+RRRRRRRR     RRRRRRR    uuuuuuuu  uuuunnnnnn    nnnnnn    eeeeeeeeeeeeee 
+*/
+
+                        {
+                            "type": "TableRowWidget", "name": "RuneChanges",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RuneChangesT",
+                                    "fields": {
+                                        "text": "Rune Changes",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": "$RMDOptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC1",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC1T",
+                                    "fields": {
+                                        "text": "Due to the increased socket counts, the following changes have been made:",
+                                        "style": "$StyleSettingsTextD"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC2",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC2T",
+                                    "fields": {
+                                        "text": " - El (Weapon Attack Rating reduced from 50 to 25)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC3T",
+                                    "fields": {
+                                        "text": " - Eld (Defense reduced from 15 to 10 )",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC4T",
+                                    "fields": {
+                                        "text": " - Ith (Max Damage reduced from 9 to 6)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC5",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC5T",
+                                    "fields": {
+                                        "text": " - Tal/Ral/Ort/Thul (Resist% - Armor reduced from 30 to 10 and Shield from 35 to 20 ",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC6",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC6T",
+                                    "fields": {
+                                        "text": " - Tal/Ral/Ort/Thul (Elemental Damage reduced by 50%)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC7",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC7T",
+                                    "fields": {
+                                        "text": " - Sol (Damage Reduced By changed from 7 to 4)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC8",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC8T",
+                                    "fields": {
+                                        "text": " - Shael (Increased Attack Speed reduced from 20% to 10%)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC9",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC9T",
+                                    "fields": {
+                                        "text": " - Shael (Faster Hit Recovery reduced from 20% to 10%",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC10",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC10T",
+                                    "fields": {
+                                        "text": " - Dol (HP Regen reduced from 7 to 3)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC11",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC11T",
+                                    "fields": {
+                                        "text": " - Pul (Att-Demon reduced from 100 to 50 and Dmg-Demon from 75% to 40%)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC12",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC12T",
+                                    "fields": {
+                                        "text": " - Pul (Enhanced Defense% reduced from 30% to 20%)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC13",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC13T",
+                                    "fields": {
+                                        "text": " - Um (All Resistance% reduced from 15% to 10%)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC14",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC14T",
+                                    "fields": {
+                                        "text": " - Um (Open Wounds reduced from 25% to 10%)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC15",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC15T",
+                                    "fields": {
+                                        "text": " - Mal (Magic Damage Reduced by lowered from 7 to 3)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC16",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC16T",
+                                    "fields": {
+                                        "text": " - Amn (Life Steal reduced from 7% to 5%)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC17",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC17T",
+                                    "fields": {
+                                        "text": " - Ist (Weapon - Magic Find% reduced from 30% to 15%)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC18",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC18T",
+                                    "fields": {
+                                        "text": " - Ist (Armor - Magic Find reduced from 25% to 10%)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC19",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC19T",
+                                    "fields": {
+                                        "text": " - Gul (Attack Bonus% reduced from 20% to 10%)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC20",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC20T",
+                                    "fields": {
+                                        "text": " - Vex (Mana Steal reduced from 7% to 5%)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC21",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC21T",
+                                    "fields": {
+                                        "text": " - Cham (Freeze Target reduced from 3 to 2)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC22",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC22T",
+                                    "fields": {
+                                        "text": " - Ohm (Enhanded Damage% reduced from 50% to 35%)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC23",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC23T",
+                                    "fields": {
+                                        "text": " - Lo (Deadly Strike reduced from 20% to 10%)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC24",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC24T",
+                                    "fields": {
+                                        "text": " - Ber (Crushing Blow reduced from 20% to 10%)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RC25",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "RC25T",
+                                    "fields": {
+                                        "text": " - Jah (Max HP% reduced from 5 to 2)",
+                                        "style": "$StyleSettingsText"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
